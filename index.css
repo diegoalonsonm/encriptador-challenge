@@ -1,0 +1,167 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* body */
+body {
+    background-color: #6e0b0b;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* container que reserva todo */
+.container {
+    background-color: white;
+    margin: 10px auto;
+    padding: 20px;
+    width: 80%;
+    height: 90vh;
+    border-radius: 15px;
+    position: relative;
+}
+
+/* navbar */
+.navbar > h1 {
+    text-align: center;
+    color: #dfb202;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+
+/* todo el estilo de los inputs */
+#input {
+    margin: 10px 0;
+    padding: 10px;
+    width: 80%;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #333333;
+}
+
+#input:focus {
+    outline: none;
+}
+
+.input-container {
+    height: 350px;
+}
+
+/* los botones */
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    margin: 200px 0;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: 'Roboto Condensed', sans-serif;
+    cursor: pointer;
+}
+
+#encrypt {
+    background-color: #dfb202;
+    color: white;
+}
+
+#encrypt:hover {
+    background-color: #f2d94e;
+}
+
+#encrypt:active {
+    background-color: #bb9604;
+}
+
+#decrypt {
+    background-color: #6e0b0b;
+    color: white;
+}
+
+#decrypt:hover {
+    background-color: #a11a1a;
+}
+
+#decrypt:active {
+    background-color: #4c0707;
+}
+
+#clean {
+    background-color: #333333;
+    color: white;
+}
+
+#clean:hover {
+    background-color: #4c4c4c;
+}
+
+#clean:active {
+    background-color: #1a1a1a;
+}
+
+/* el output del texto */
+#output {
+    margin: 10px 0;
+    padding: 10px;
+    width: 80%;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #333333;
+
+}
+
+#output:focus {
+    outline: none;
+}
+
+/* estructura y media queries */
+.input-container, .output-container {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .parent-container {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 767px) { 
+    .parent-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .icon {
+        display: none;
+    }
+}
+
+.footer {
+    text-align: center;
+    bottom: 0;
+    color: #dfb202;
+    font-size: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.footer > p > a {
+    color: #dfb202;
+}
+
+.footer > p > a:hover {
+    color: #f2d94e;
+}
