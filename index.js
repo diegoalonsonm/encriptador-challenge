@@ -7,7 +7,7 @@ function encriptarTexto() {
     textoInicial = inputTexto.value
     const textoIngresado = inputTexto.value
 
-    const regex = /^[A-Z]+$/
+    const regex = /^[a-z]+$/
 
     if (!regex.test(textoIngresado)) {
         alert("El texto debe estar en minusculas sin caracteres especiales o numeros")
