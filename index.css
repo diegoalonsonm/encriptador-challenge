@@ -13,7 +13,7 @@ body {
 .container {
     background-color: white;
     margin: 10px auto;
-    padding: 20px;
+    /*padding: 20px;*/
     width: 80%;
     height: 90vh;
     border-radius: 15px;
@@ -31,6 +31,7 @@ body {
     justify-content: space-between;
     align-items: center;
     margin: 10px 0;
+    padding: 20px
 }
 
 /* todo el estilo de los inputs */
@@ -125,6 +126,36 @@ button {
     outline: none;
 }
 
+.copy-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: 'Roboto Condensed', sans-serif;
+    cursor: pointer;
+    background-color: #dfb202;
+    color: white;
+}
+
+.copy-button:hover {
+    background-color: #f2d94e;
+}
+
+.copy-button:active {
+    background-color: #bb9604;
+}
+
+.output-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 350px;
+}
+
+.d-none {
+    display: none;
+}
+
 /* estructura y media queries */
 .input-container, .output-container {
     width: 100%;
@@ -147,6 +178,26 @@ button {
     }
 }
 
+@media screen and (max-width: 500px){
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    .buttons > button {
+        margin: 5px 0;
+    }
+    .output-container {
+        margin-top: 100px;
+    }
+    .container {
+        height: 100%;
+    }
+    .copy-button {
+        margin-top: 20px;
+    }
+}
+
+/* footer */
 .footer {
     text-align: center;
     bottom: 0;
